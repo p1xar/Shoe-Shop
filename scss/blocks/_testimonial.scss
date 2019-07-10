@@ -1,0 +1,20 @@
+.testimonial {
+	background-color: $testi-bg;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-top: 6.25rem;
+	&::before {
+		content: url('../img/left_arrow.svg');
+		position: absolute;
+		left:1%;
+		top: 40%;
+	}
+	&::after {
+		content: url(../img/right_arrow.svg);
+		position: absolute;
+		right: 1%;
+	}
+}

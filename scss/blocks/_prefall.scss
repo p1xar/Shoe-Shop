@@ -1,0 +1,10 @@
+.pre-collection {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 8.125rem;
+	justify-content: space-between;
+	&__img {
+		transform: scale(0.9);
+	}
+}

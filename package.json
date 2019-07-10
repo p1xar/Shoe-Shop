@@ -1,0 +1,28 @@
+{
+  "name": "npmtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss build/css/style.css",
+    "minify-js": "uglifyjs build/js/index.js -m -с -o build/js/index.min.js",
+    "minify-css": "csso build/css/style.css --output build/css/style.min.css",
+    "prefix-css": "npx postcss build/css/style.css --use autoprefixer -d build/css",
+    "build": "npm run build-css && npm run minify-js && npm run minify-css && npm run prefix-css",
+    "start": "nodemon -e js,scss -x \"npm run build\" --ignore build/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "jshint": "^2.10.2",
+    "node-sass": "^4.12.0",
+    "uglify-js": "^3.6.0"
+  },
+  "dependencies": {
+    "csso-cli": "^2.0.2",
+    "jquery": "^3.4.1",
+    "nodemon": "^1.19.1",
+    "postcss-cli": "^6.1.2"
+  }
+}

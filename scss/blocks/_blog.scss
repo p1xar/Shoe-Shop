@@ -1,0 +1,49 @@
+.blog {
+	margin-top: 6.25rem;
+	&__title {
+		font-family: 'Cormorant Garamond';
+		font-size: 2.8125rem;
+		font-weight: 400;
+		text-align: center;
+	}
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	&__img {
+		position: relative;
+		left: 5%;
+		top: 2.6rem;
+	}
+}
+
+.controls {
+	display: flex;
+	justify-content: space-between;
+	width: 7rem;
+	margin-top: 13.125rem;
+	clear: both;
+	float: right;
+	font-family: 'Poppins';
+	font-weight: 700;
+	font-size: 1.25rem;
+	&__prev {
+		text-decoration: none;
+		color: #747474;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			color: #5cdeb7;
+		}
+		
+	}
+	&__next {
+		text-decoration: none;
+		transition: all 0.3s ease 0s;
+		color: #747474;
+		&:hover {
+			color: #5cdeb7;
+		}
+	}
+}

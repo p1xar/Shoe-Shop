@@ -1,0 +1,79 @@
+.slider {
+	&__img {
+		width: 37.5rem;
+	    height: 37.5rem;
+	    top: -10rem;
+	    position: relative;
+	    display: flex;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	&__img:last-child {
+		display: none;
+	}
+}
+
+.slider-text {
+	&__text {
+		font-family: 'Roboto';
+	    font-size: 8.448rem;
+	    font-weight: 700;
+	    letter-spacing: .4rem;
+	    margin-top: 5.6rem;
+	}
+	&__btn {
+		padding-left: 1.473125rem;
+	    padding-top: 0.625rem;
+	    padding-bottom: 0.625rem;
+	    padding-right: 1.473125rem;
+	    font-family: 'Poppins';
+	    font-size: 1.5rem;
+	    letter-spacing: .09rem;
+	    font-weight: bolder;
+	    line-height: 2;
+	    color: #323237;
+	    text-decoration: none;
+	    position: relative;
+	    left: 5rem;
+	    top: 0.35rem;
+	    z-index: 2;
+		background-color: $skewed-green;
+		&-shadow {
+			position: relative;
+		    top: 0.7rem;
+		    left: -12.5rem;
+		    padding: 1rem 8rem;
+		    border: 0.125rem solid $skewed-green;	
+		}
+	}
+}
+
+.slider-text__text {
+	
+}
+
+.slider-footer {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+    padding: 0 1.5rem;
+    top: -22.8rem;
+	&__text {
+		font-family: Poppins;
+		font-size: 0.8rem;
+		position: relative;
+		top: -4rem;
+		left: 0;
+		color: $text-gray;
+		transform: rotate(270deg);
+		width: 21rem;
+		letter-spacing: 0.08rem;
+		line-height: 1.3rem;
+	}
+}
+
+.social-links {
+	&__item {
+		margin-bottom: 1rem;
+	}
+}

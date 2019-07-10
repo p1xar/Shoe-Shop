@@ -1,0 +1,155 @@
+.popular {
+	&__header {
+		font-family: 'Cormorant Garamond';
+		font-weight: bolder;
+		font-size: 2.8rem;
+	}
+}
+
+.popular-items {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 4.375rem;
+}
+
+.popular-item {
+	&__title {
+		font-family: 'Poppins';
+		font-size: 0.9rem;
+		margin-top: 2.5rem;
+		display: inline-block;
+		margin-right: 1.875rem;
+	}
+	&__desc {
+		display: inline-block;
+		font-family: 'Poppins';
+		font-size: 0.9rem;
+		color: #bdbdbd;
+	}
+	&__link {
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: 'Poppins';
+		background-size: cover;
+		font-weight: 400;
+		color: white;
+		position: relative;
+		width: 15.875rem;
+		height: 18.9375rem;
+		&-shadow {
+			visibility: hidden;
+			padding: 0.7rem 1.5625rem;
+			border-radius: 0.3rem;
+			border: 1px solid white;
+		}
+	}
+	&__price {
+		display: block;
+		font-family: 'Roboto';
+		font-weight: 400;
+		color: $skewed-grayer;
+		font-size: 1.5rem;
+		margin-top: 1.5625rem;
+	}
+	&:nth-child(n) a {
+		color: rgba(0,0,0,0);
+	}
+	&:nth-child(1) a {
+		background: linear-gradient(0deg,rgba(0,0,0,0), rgba(0,0,0,0)),url('../img/popular-shoe-1.png');
+		z-index: 100;
+		&:before {
+			content: '';
+			background-image: linear-gradient(0deg,rgba(144,243,215,0.9), rgba(144,243,215,1)),url('../img/popular-shoe-1.png');
+			opacity: 0;
+			z-index: -100;
+			transition: opacity 0.3s;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		&:hover {
+			&:before {
+				opacity: 1;
+			}
+			& span {
+				visibility: initial;
+				color: white;
+			}
+		}
+	}
+	&:nth-child(2) a {
+		background: linear-gradient(0deg,rgba(0,0,0,0), rgba(0,0,0,0)),url('../img/popular-shoe-2.png');
+		z-index: 100;
+		&:before {
+			content: '';
+			background-image: linear-gradient(0deg,rgba(144,243,215,0.9), rgba(144,243,215,1)),url('../img/popular-shoe-2.png');
+			opacity: 0;
+			z-index: -100;
+			transition: opacity 0.3s;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		&:hover {
+			&:before {
+				opacity: 1;
+			}
+			& span {
+				visibility: initial;
+				color: white;
+			}
+		}	
+	}
+	&:nth-child(3) a {
+		background: linear-gradient(0deg,rgba(0,0,0,0), rgba(0,0,0,0)),url('../img/popular-shoe-3.png');
+		z-index: 100;
+		&:before {
+			content: '';
+			background-image: linear-gradient(0deg,rgba(144,243,215,0.9), rgba(144,243,215,1)),url('../img/popular-shoe-3.png');
+			opacity: 0;
+			z-index: -100;
+			transition: opacity 0.3s;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		&:hover {
+			&:before {
+				opacity: 1;
+			}
+			& span {
+				visibility: initial;
+				color: white;
+			}
+		
+		}
+	}	
+	&:nth-child(4) a {
+		background: linear-gradient(0deg,rgba(0,0,0,0), rgba(0,0,0,0)),url('../img/popular-shoe-4.png');
+		z-index: 100;
+		&:before {
+			content: '';
+			background-image: linear-gradient(0deg,rgba(144,243,215,0.9), rgba(144,243,215,1)),url('../img/popular-shoe-4.png');
+			opacity: 0;
+			z-index: -100;
+			transition: opacity 0.3s;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		&:hover {
+			&:before {
+				opacity: 1;
+			}
+			& span {
+				visibility: initial;
+				color: white;
+			}
+		
+		}
+	}
+}

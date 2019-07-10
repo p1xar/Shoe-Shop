@@ -1,0 +1,38 @@
+.main-nav {
+	margin: 0 auto;
+	&__items {
+		display: flex;
+		align-items: center;
+		padding-top: 2.9rem;
+	}
+	&__item:first-child {
+		margin-right: auto;
+	}
+	&__item:nth-child(n+3) {
+		display: none;
+	}
+	&__logo {
+		position: relative;
+		top: 0.6rem;
+		left: 0.3rem;
+		shape-rendering: crispEdges;
+	}
+	&__logotext {
+		font-size: 18pt;
+		font-family: "Ubuntu";
+		color: #61e9c2;
+		letter-spacing: 0.02rem;
+		text-decoration: none;
+		margin-left: 0.15rem;
+		&-color {
+			background-color: transparent;
+			color: #232323;	
+		}
+	}
+	&__link {
+		text-decoration: none;
+	}
+}
+
+	
+
