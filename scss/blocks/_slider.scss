@@ -75,5 +75,9 @@
 .social-links {
 	&__item {
 		margin-bottom: 1rem;
+		transition: filter 0.3s ease-in;
+		&:hover {
+			filter: brightness(100%) invert(1);		
+		}
 	}
 }
