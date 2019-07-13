@@ -22,23 +22,7 @@
 	    margin-top: 5.6rem;
 	}
 	&__btn {
-		padding-left: 1.473125rem;
-	    padding-top: 0.625rem;
-	    padding-bottom: 0.625rem;
-	    padding-right: 1.473125rem;
-	    font-family: 'Poppins';
-	    font-size: 1.5rem;
-	    letter-spacing: .09rem;
-	    font-weight: bolder;
-	    line-height: 2;
-	    color: #323237;
-	    text-decoration: none;
-	    position: relative;
-	    left: 5rem;
-	    top: 0.35rem;
-	    z-index: 2;
-		background-color: $skewed-green;
-		&-shadow {
+		&_shadow {
 			position: relative;
 		    top: 0.7rem;
 		    left: -12.5rem;
@@ -48,16 +32,12 @@
 	}
 }
 
-.slider-text__text {
-	
-}
-
 .slider-footer {
 	display: flex;
 	justify-content: space-between;
 	position: relative;
     padding: 0 1.5rem;
-    top: -22.8rem;
+    top: -28.8rem;
 	&__text {
 		font-family: Poppins;
 		font-size: 0.8rem;
@@ -73,11 +53,17 @@
 }
 
 .social-links {
+	display: flex;
+	flex-direction: column;
 	&__item {
 		margin-bottom: 1rem;
 		transition: filter 0.3s ease-in;
 		&:hover {
 			filter: brightness(100%) invert(1);		
 		}
+	}
+	&__img {
+		width: 3.2841875rem;
+		height: 3.28025rem;
 	}
 }

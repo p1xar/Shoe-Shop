@@ -35,6 +35,8 @@
 }
 
 .subscribe {
+	display: flex;
+	flex-direction: column;
 	&__text {
 		font-family: 'Poppins';
 		font-size: 0.9375rem;

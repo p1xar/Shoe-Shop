@@ -56,6 +56,15 @@
 }
 
 .button {
+	position: relative;
+	max-width: 17rem;
+	margin-top: 6.688rem;
+	&_right {
+		float: right;
+	}
+	&_left {
+		float: left;
+	}
 	&__text {
 		font-family: 'Poppins';
 		font-size: 0.9rem;
@@ -63,39 +72,57 @@
 		color: black;
 		font-weight: bolder;
 		padding: 0.7rem 1rem;
-		margin-top: 4.6875rem;
 		background: $skewed-green;
 		z-index: 2;
 		transition: all 0.3s ease 0s;
-		&_right {
-			float: right;
-		}
-		&_left {
-			float: left;
-		}
 		&:hover {
 			background-color: #2EE59D;
 			box-shadow: 0rem 0.9375rem 1.25rem rgba(46, 229, 157, 0.4);
 			color: #fff;
-			transform: translate(-0.5rem,-0.5rem);
+		}
+		&_big {
+			padding-left: 1.473125rem;
+			padding-top: 0.625rem;
+			padding-bottom: 0.625rem;
+			padding-right: 1.473125rem;
+			position: relative;
+			top: -6rem;
+			left: 5rem;
+			font-family: 'Poppins';
+			font-size: 1.5rem;
+			letter-spacing: .09rem;
+			font-weight: bolder;
+			line-height: 2;
+			color: #323237;
+			text-decoration: none;
+			z-index: 2;
+			background-color: $skewed-green;	
 		}	
 	}
 	&__shadow {
 		color: $skewed-green;
 		border: 0.0625rem solid $skewed-green;
-		padding: 0.4rem 3rem;
-		position: relative;
-		left: 21rem;
-		top: 4.8rem;
+		position: absolute;
+		left: -1rem;
+		width: 6rem;
+		height: 2rem;
+		top: -1.5rem;
 		z-index: -1;
 		&_shadowleft {
 			color: $skewed-green;
 		    border: .0625rem solid $skewed-green;
 		    padding: .4rem 3.5rem;
-		    position: relative;
 		    left: -7.8rem;
 		    top: 4.8rem;
 		    z-index: -1;
+		}
+		&_big {
+			width: 16.5rem;
+			height: 3rem;
+			border: 0.150rem solid $skewed-green;
+			z-index: 0;
+			left: 4rem;
+			top: -5.5rem;
 		}
 		&_bigger {
 			left: 25rem;

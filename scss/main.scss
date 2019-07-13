@@ -6,7 +6,6 @@ html {
 	scroll-behavior: smooth;
 }
 @import 'blocks/wrapper';
-@import 'media/small';
 //Slider
 @import 'blocks/slider';
 @import 'blocks/nav';
@@ -16,4 +15,4 @@ html {
 @import 'blocks/testimonial';
 @import 'blocks/blog';
 @import 'blocks/footer';
-
+@import 'media/small';
