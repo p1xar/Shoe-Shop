@@ -14,6 +14,8 @@
 }
 
 .slider-text {
+	display: flex;
+	flex-direction: column;
 	&__text {
 		font-family: 'Roboto';
 	    font-size: 8.448rem;
