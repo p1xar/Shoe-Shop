@@ -2,7 +2,16 @@
 	.bgskewed {
 		height: 100%;
 		background-position-y: top;
-		background-position-x: 68.5rem;
+		background-position-x: 80.5rem;
+		@media screen and (max-width: 475px) {
+			background-position-x: 74.5rem;	
+		}
+		@media screen and (max-width: 400px) {
+			background-position-x: 71.5rem;		
+		}
+		@media screen and (max-width: 320px) {
+			background-position-x: 67.5rem;	
+		}
 		background-repeat: initial;
 	}
 	.wrapper {
