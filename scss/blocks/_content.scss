@@ -91,6 +91,9 @@
 			font-family: 'Poppins';
 			font-size: 1.5rem;
 			letter-spacing: .09rem;
+			@media screen and (-webkit-min-device-pixel-ratio:0) {
+				letter-spacing: 1px;
+			}
 			font-weight: bolder;
 			line-height: 2;
 			color: #323237;
