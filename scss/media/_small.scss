@@ -99,17 +99,22 @@
 		}
 		&_left {
 			margin-left: 1rem;
+			margin-top: 3.688rem;
+		}
+		&_right {
+			margin-top: 3.688rem;
 		}
 	}
 	.popular {
 		&__header {
-			margin-top: 2rem;
+			margin-top: 4rem;
 			text-align: center;
 			font-size: 3rem;
 		}
 	}
 	.popular-items {
 		flex-direction: column;
+		margin-top: 2.375rem;
 	}
 	.popular-item {
 		&__price {
@@ -189,5 +194,136 @@
 				margin-top: 1rem;
 			}
 		}
+	}
+}
+
+@media screen and (min-width: 36rem) and (max-width: 47.99875rem) {
+	.bgskewed {
+		height: 100%;
+		background-position-y: top;
+		background-position-x: 82rem;
+		background-repeat: initial;
+	}
+	.wrapper {
+		max-width: 90%;
+	}
+
+	.slider-text {
+		align-items: initial;
+		&__text {
+			text-align: initial;
+		}
+	}
+
+	.slider {
+		&__img {
+			max-width: 100%;
+			height: 100%;
+			top: -5rem;
+		}
+	}
+	.popular-items {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
+	.slider-footer {
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		position: inherit;
+		&__text {
+			transform: rotate(0);
+			font-size: 1.5rem;
+			text-align: center;
+			line-height: 1.5rem;
+			width: 100%;
+		}
+	}
+	.social-links {
+		flex-direction: row;
+		&__item {
+			&:not(:last-child) {
+				margin-right: 1rem;
+			}
+		}
+	}
+	.about-us {
+		margin-top: 2rem;
+		flex-direction: column;
+		&__img {
+			max-width: 100%;
+		}
+	}
+	.content {
+		&__header {
+			text-align: center;
+			font-size: 3rem;
+			margin-top: 2rem;
+		}		
+		&__desc {
+			text-align: center;
+			font-size: 1rem;
+		}
+		&__position {
+			margin-bottom: 2rem;
+		}
+		&_squeezed {
+			padding: 0 3rem;
+		}
+	}
+	.popular {
+		&__header {
+			margin-top: 3rem;
+			text-align: center;
+		}
+	}
+	.popular-item {
+		&__price {
+			margin-bottom: 2rem;
+		}
+	}
+	.pre-collection {
+		margin-top: 3rem;
+		flex-direction: column-reverse;
+		&__img {
+			transform: none;
+			max-width: 100%;
+		}
+	}
+	.testimonial {
+		&:before {
+			visibility: hidden;
+		}
+		&:after {
+			visibility: hidden;
+		}
+	}
+	.blog {
+		margin-top: 3rem;
+		&__title {
+			font-size: 3rem;
+		}
+	}
+	.container {
+		flex-direction: column;
+		&__img {
+			max-width: 100%;
+			position: inherit;
+			margin-top: 2rem;
+		}
+	}
+	.controls {
+		margin-top: 4.125rem;
+	}
+	.footer-elements {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.subscribe {
+		flex-grow: 1;
+		align-items: center;
+		margin-top: 2rem;
 	}
 }
