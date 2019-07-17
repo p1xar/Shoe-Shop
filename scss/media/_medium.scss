@@ -1,5 +1,82 @@
-@media (max-width: 61.99875rem) {
+@media screen and (min-width: 47.99875rem) and (max-width: 61.99875rem) {
+    .bgskewed {
+        height: 73.313rem;
+    }
     .wrapper {
         max-width: 90%;
     }
+    .slider-footer {
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		top: -4rem;
+		&__text {
+			transform: rotate(0);
+			font-size: 1.5rem;
+			text-align: center;
+			line-height: 1.5rem;
+			width: 100%;
+		}
+	}
+	.social-links {
+		flex-direction: row;
+		&__item {
+			&:not(:last-child) {
+				margin-right: 1rem;
+			}
+		}
+	}
+    .popular-item {
+        &__price {
+            margin-bottom: 1.5625rem;
+        }
+    }
+    .popular-items {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .about-us {
+        &__img {
+            transform: scale(1);
+            flex-basis: 45%;
+        }
+    }
+    .content {
+        flex-basis: 55%;
+        &__header {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        &__desc {
+            text-align: center;
+        }
+        &__squeezed {
+            padding: 0 6rem;
+        }
+        &__position {
+            margin-bottom: 2.25rem;
+        }
+    }
+    .popular {
+        &__header {
+            margin-top: 3rem;
+        }
+    }
+    .testimonial {
+        &:before {
+            top: 47%;
+        }
+    }
+    .footer-nav__link {
+        text-align: center;
+    }
+    .footer-elements {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.subscribe {
+		align-items: center;
+        margin-top: 2rem;
+        flex-basis: 100%;
+	}
 }

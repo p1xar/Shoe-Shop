@@ -207,14 +207,12 @@
 	.wrapper {
 		max-width: 90%;
 	}
-
 	.slider-text {
 		align-items: initial;
 		&__text {
 			text-align: initial;
 		}
 	}
-
 	.slider {
 		&__img {
 			max-width: 100%;
@@ -227,7 +225,6 @@
 		flex-wrap: wrap;
 		justify-content: space-evenly;
 	}
-
 	.slider-footer {
 		justify-content: center;
 		flex-direction: column;
@@ -317,6 +314,9 @@
 	.controls {
 		margin-top: 4.125rem;
 	}
+	.footer-nav__link {
+        text-align: center;
+    }
 	.footer-elements {
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -325,5 +325,6 @@
 		flex-grow: 1;
 		align-items: center;
 		margin-top: 2rem;
+		flex-basis: 100%;
 	}
 }
