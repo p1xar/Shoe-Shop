@@ -2,7 +2,7 @@
 > This is a markup of [VictorThemes](https://victorthemes.com/freebies/ecommerce-website-template/)'s template
 
 ## Preview
-![Website preview]()
+![Website preview](build/img/preview.png)
 
 ### How to run this project?
 Just clone this repository into any directory and open "index.html" file
