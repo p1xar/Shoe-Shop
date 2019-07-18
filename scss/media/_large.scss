@@ -1,0 +1,26 @@
+@media screen and (max-width: 74.99875rem) {
+    .wrapper {
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 75rem) {
+    .wrapper {
+        max-width: 1170px;
+    }
+    .slider-footer {
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+    .testimonial {
+        &:before {
+            left: auto;
+            padding-right: 65rem;
+            top: 43%;
+        }
+        &:after {
+            padding-left: 65rem;
+            right: auto;
+        }
+    }
+}
