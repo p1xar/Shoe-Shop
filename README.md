@@ -18,7 +18,7 @@ Contributions are always **welcome and recomended**. Here is how:
 ## Requirments
 For development, you will only need Node.js installed on your environement
 
-### Node installation on OS X
+#### Node installation on OS X
 
 You will need to use a Terminal. On OS X, you can find the default terminal in
 `/Applications/Utilities/Terminal.app`.
