@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/main.scss build/css/style.css",
-    "minify-js": "uglifyjs build/js/index.js -m -с -o build/js/index.min.js",
-    "minify-css": "csso build/css/style.css --output build/css/style.min.css",
-    "prefix-css": "npx postcss build/css/style.css --use autoprefixer -d build/css",
-    "build": "npm run build-css && npm run minify-js && npm run minify-css && npm run prefix-css",
+    "build-css": "node-sass --include-path scss src/scss/main.scss src/css/style.css",
+    "minify-js": "uglifyjs src/js/index.js -m -с -o build/js/index.min.js",
+    "minify-css": "csso src/css/style.css --output build/css/style.min.css",
+    "prefix-css": "npx postcss src/css/style.css --use autoprefixer -d src/css",
+    "build": "npm run build-css && npm run minify-js && npm run prefix-css && npm run minify-css",
     "start": "nodemon -e js,scss -x \"npm run build\" --ignore build/"
   },
   "author": "",
