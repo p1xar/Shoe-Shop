@@ -9,6 +9,7 @@
 .popular-items {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 4.375rem;
@@ -54,6 +55,7 @@
 		color: $skewed-grayer;
 		font-size: 1.5rem;
 		margin-top: 1.5625rem;
+		margin-bottom: 1.5625rem;
 	}
 	&:nth-child(n) a {
 		color: rgba(0,0,0,0);
