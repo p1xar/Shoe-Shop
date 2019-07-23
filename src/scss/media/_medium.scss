@@ -34,8 +34,8 @@
     }
     .about-us {
         &__img {
-            transform: scale(1);
-            flex-basis: 45%;
+            transform: initial;
+            max-width: 50%;
         }
     }
     .content {
