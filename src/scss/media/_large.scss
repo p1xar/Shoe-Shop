@@ -7,6 +7,12 @@
             max-width: 60%;
         }
     }
+    .pre-collection {
+        &__img {
+            transform: initial;
+            max-width: 50%;
+        }
+    }
 }
 
 @media screen and (min-width: 75rem) {
